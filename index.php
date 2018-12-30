@@ -1,5 +1,5 @@
 <?php
-  include 'FootballData.php';
+  require_once('vendor/autoload.php');
 ?>
 <!DOCTYPE html>
 <html>
@@ -16,7 +16,7 @@
                 <?php
                 // Create instance of API class
                 $ini = parse_ini_file('config.ini', true);
-                $api = new FootballData($ini['authToken']);
+                $api = new AdamJsNet\FootballData\Client($ini['authToken']);
                 echo "<p><hr><p>"; ?>
                 <h3>Matches for the 2nd matchday of the Premiere League</h3>
                 <table class="table table-striped">
