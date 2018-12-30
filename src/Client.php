@@ -1,5 +1,7 @@
 <?php
 
+namespace Dfrt82\FootballData;
+
 /**
  * This service class encapsulates football-data.org's RESTful API.
  *
@@ -7,7 +9,7 @@
  * @date 04.11.2015 | switched to v2 09.08.2018
  * 
  */
-class FootballData {
+class Client {
     const BASE_URI = "http://api.football-data.org/v2/";
 
     /** @var string */
