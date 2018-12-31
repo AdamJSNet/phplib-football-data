@@ -15,8 +15,9 @@
                 </div>
                 <?php
                 // Create instance of API class
-                $ini = parse_ini_file('config.ini', true);
-                $api = new Dfrt82\FootballData\Client($ini['authToken']);
+                $dotenv = new Dotenv\Dotenv(__DIR__);
+                $dotenv->load();
+                $api = new Dfrt82\FootballData\Client(getenv('API_TOKEN'));
                 echo "<p><hr><p>"; ?>
                 <h3>Matches for the 2nd matchday of the Premiere League</h3>
                 <table class="table table-striped">
