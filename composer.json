@@ -1,4 +1,6 @@
 {
+  "name": "adamjsnet/phplib-football-data",
+  "description": "Implements some basic functionality of the football-data.org API (v2)",
   "autoload": {
     "psr-4": {
       "AdamJsNet\\FootballData\\": "src/"
