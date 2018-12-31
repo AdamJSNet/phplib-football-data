@@ -1,4 +1,6 @@
 {
+  "name": "dfrt82/phplib-football-data",
+  "description": "Implements some basic functionality of the football-data.org API (v2)",
   "autoload": {
     "psr-4": {
       "Dfrt82\\FootballData\\": "src/"
